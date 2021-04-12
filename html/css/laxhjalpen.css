@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/*
+==================================================================================
+Globala regler
+==================================================================================
+*/
+html {
+    margin: 2%;
+}
+body {
+    margin: auto;           /* Centrera sidan */
+    max-width: 860px;
+    font-family: "Helvetica Neue", "Liberation Sans", Calibri, Arial, sans-serif;
+    font-size: 100%;        /* Startvärde */
+}
+
+/*
+section, header, footer {
+    outline: 1px solid red;  
+}
+*/
+
+h1 {
+    font-family: "Merienda One", cursive;
+}
+
+footer {
+    margin-top: 3em;
+    text-align: center;
+    color: #999;
+}
+
+/*
+==================================================================================
+Återanvändningsbara klasser att använda "lite här och där"
+==================================================================================
+*/
+
+/*
+==================================================================================
+Regler för startsidan
+==================================================================================
+*/
+header {
+    text-align: center;
+}
+h1::first-letter {
+    color: #00AF64;
+}
+
+.hwrap {
+    display: flex;          /* Gör divven till en flex container */
+    flex-wrap: wrap;        /* Radbryt om det behövs */
+    align-items: center;    /* Lägg elementen centrerat vertikalt */
+    justify-content: center;/* Och intill varandra centrerat */
+}
+.hwrap > a {
+    margin-right: 30px;
+
+.startpage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.startpage header,
+.startpage footer {
+    flex: 0 0 100%;
+}
+.startpage section {
+    flex: 0 0 22%;
+}
+.startpage h1 {
+    font-size: 500%;            /* Massiv rubrik på startsidan */
+}
+.startpage .logo {
+    width: 235px;
+    height: 198px;
+}
+
+.tagline {
+    font-size: 120%;
+    padding: 0.5em;             /* Avstånd till kantline */
+    border-top: 3px double #00AF64;
+    border-bottom: 3px double #00AF64;
+    margin-bottom: 1em 0;       /* Avstånd nedåt men inte uppåt */
+}
+
+/*
+==================================================================================
+Regler för menyn
+==================================================================================
+*/
+.menu a:link,
+.menu a:visited {
+    text-decoration: none;
+    color: #000;
+}
+.menu a:focus,
+.menu a:hover {
+    text-decoration: underline;
+    color: #A62F00;
+}
+.menu a:active {
+    text-decoration: underline;
+    color: #FF4900;
+}
+.menu h2 {
+    /* Nya rader i befintlig regel */
+    box-shadow: inset 0 0 20px #007241;
+    border-radius: 50%;
+    /* Ny rad i befintlig regel */
+    font-family: "Merienda One", cursive;
+}
+.menu > h2 {
+    margin: 0 0 1em;
+    padding: 2em 0;
+    background-color: #F5F5F5;  /* Mycket ljus grå */
+    text-align: center;
+}
+
+/*
+==================================================================================
+Andra regler för undersidor
+==================================================================================
+*/
+
+/*
+==================================================================================
+Regler för tabeller
+==================================================================================
+*/
+
+/*
+==================================================================================
+Regler för bildspel
+==================================================================================
+*/
+
+/*
+==================================================================================
+Regler för formulär
+==================================================================================
+*/
